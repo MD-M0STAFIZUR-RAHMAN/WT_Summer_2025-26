@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Student Services Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Student Services Portal</h1>
+        <p>Digitizing your university requests for a faster, smoother experience.</p>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <main>
+        <section class="intro">
+            <h2>Available Services</h2>
+            <p>Welcome to the digital student affairs portal. Here you can officially submit requests for official
+                transcripts, temporary or replacement ID cards, and general academic inquiries.</p>
+        </section>
+
+        <section class="form-section">
+            <h2>Service Request Form</h2>
+            <form action="#" method="POST">
+
+                <div class="form-group">
+                    <label>Student Name:</label>
+                    <input type="text" name="studentName" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Student ID:</label>
+                    <input type="text" name="studentID" maxlength="10" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Email Address:</label>
+                    <input type="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Service Type:</label>
+                    <select name="serviceType">
+                        <option value="transcript">Transcript Request</option>
+                        <option value="id-card">ID Card Issue</option>
+                        <option value="inquiry">General Inquiry</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Urgency Level:</label>
+                    <input type="radio" id="low" name="urgency" value="low" checked> Low
+                    <input type="radio" id="medium" name="urgency" value="medium"> Medium
+                    <input type="radio" id="high" name="urgency" value="high"> High
+                </div>
+
+                <div class="form-group">
+                    <label>Additional Details:</label>
+                    <textarea name="additionalDetails" rows="4"></textarea>
+                </div>
+
+                <input type="submit" value="Submit Request" class="submit-btn">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 University Student Affairs Department. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
